@@ -1,0 +1,24 @@
+name       : mylg 
+version    : 0.2.5
+release    : 1
+source     :
+    - https://github.com/mehrdadrad/mylg/archive/v0.2.5.tar.gz : 5a85e9fb985af73bb9aca181ec305df40cdeb3664087c2fe2036d3e8d635c37c
+license    : MIT
+component  : network.util
+summary    : Command line Network Diagnostic Tool
+description: |
+    Software utility which combines the functions of the different network probes in one network diagnostic tool.
+builddeps  :
+    - git
+    - golang
+    - libpcap-devel
+setup      : |
+    mkdir -p $workdir/gopath/{bin,pkg,src}
+    export GOPATH=$workdir/gopath
+    export GOBIN=$GOPATH/bin
+    go get
+build      : |
+    export GOPATH=$workdir/gopath
+    go build
+install    : |
+    install -Dm755 $workdir/mylg-${version} $installdir/usr/bin/mylg
