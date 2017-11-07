@@ -2,8 +2,8 @@
     <Source>
         <Name>mylg</Name>
         <Packager>
-            <Name>Sönke Behrendt</Name>
-            <Email>thesoenke@outlook.com</Email>
+            <Name>Pierre-Yves</Name>
+            <Email>pyu@riseup.net</Email>
         </Packager>
         <License>MIT</License>
         <PartOf>network.util</PartOf>
@@ -23,12 +23,12 @@
         </Files>
     </Package>
     <History>
-        <Update release="1">
-            <Date>2016-11-01</Date>
-            <Version>0.2.5</Version>
+        <Update release="2">
+            <Date>2017-11-08</Date>
+            <Version>0.2.6</Version>
             <Comment>Packaging update</Comment>
-            <Name>Sönke Behrendt</Name>
-            <Email>thesoenke@outlook.com</Email>
+            <Name>Pierre-Yves</Name>
+            <Email>pyu@riseup.net</Email>
         </Update>
     </History>
 </PISI>
